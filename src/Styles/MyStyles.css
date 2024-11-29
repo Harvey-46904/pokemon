@@ -1,0 +1,117 @@
+/* Logo centrado en móvil */
+
+body{
+  background-image: url('../assets/img/fondo.jpg');
+  background-size: cover; /* Esto hace que la imagen cubra todo el body */
+  background-position: center; /* Centra la imagen */
+ 
+  height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
+  margin: 0; /* Elimina el margen por defecto */
+}
+.logo-mobile {
+    width: 120px; /* Ajusta el tamaño del logo en móvil */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Logo centrado y más grande en desktop */
+  .logo-desktop {
+    width: 200px; /* Ajusta el tamaño del logo en desktop */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* En pantalla móvil, el logo estará centrado */
+  @media (max-width: 576px) {
+    .navbar-brand {
+      text-align: center; /* Asegura que el logo se mantenga centrado */
+    }
+  }
+  
+  /* En pantalla de escritorio, el logo estará centrado y será más grande */
+  @media (min-width: 577px) {
+    .navbar-brand {
+      text-align: center; /* Asegura que el logo se mantenga centrado en desktop */
+    }
+  }
+/* Efectos para la card con borde de neón */
+.neon-card {
+  position: relative;
+  border-radius: 0.25rem;
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, rgb(226, 17, 17)), 
+                    radial-gradient(circle closest-side, #ff0000, #ff7300, #ff7300, #00ff00, #00fff0, #2900ff, #ff00bb);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: neon-glow 3s ease-in-out infinite alternate; /* Transición más lenta */
+}
+
+/* Animación del borde de neón */
+@keyframes neon-glow {
+  0% {
+    border-color: #ff0000;
+  }
+  25% {
+    border-color: #ff7300;
+  }
+  50% {
+    border-color: #ff9900;
+  }
+  75% {
+    border-color: #00ff00;
+  }
+  100% {
+    border-color: #2900ff;
+  }
+}
+
+/* Efecto de temblor de la imagen */
+.neon-img:hover {
+  animation: shake 0.5s ease-in-out;
+  border-radius: 50%; /* Asegura que la imagen mantenga forma redonda */
+}
+
+/* Animación para temblar */
+@keyframes shake {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-55%) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  75% {
+    transform: translateX(-45%) rotate(5deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+/* Efecto de resplandor de neón amarillo detrás de la imagen */
+.neon-img:hover {
+  box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.8); /* Resplandor amarillo */
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 50%; /* Aplica el borde redondo al resplandor también */
+}
+
+/* Asegurando que la imagen sea redonda */
+.neon-img {
+  border-radius: 50%; /* Asegura que la imagen sea circular */
+}
+
+.degradado-radial {
+  background: radial-gradient(circle, #ffe600, #028dff); /* Degradado radial */
+  height: 100vh;
+  width: 100%;
+}
+
+.transparent-div {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+ 
+}
