@@ -31,5 +31,7 @@ La aplicación se ajusta a las necesidades del proyecto, permitiendo visualizar 
 ## Instalación
 
 1. Clona este repositorio en tu máquina local:
+2.npm run dev
+3.se inicia desde localhost:puerto/home
 
 
