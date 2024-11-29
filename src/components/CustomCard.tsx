@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import pokebola from '../assets/img/pokebola.webp';
-import '../Styles/MyStyles.css';
+import '../Styles/myStyles.css';
 
 interface CustomCardProps {
   number: number;
@@ -12,7 +12,6 @@ interface CustomCardProps {
 const CustomCard: React.FC<CustomCardProps> = ({ number, name }) => {
   return (
     <div className="card neon-card" style={{ width: '12rem', position: 'relative', textAlign: 'center' }}>
-      {/* Imagen sobresaliendo hacia arriba */}
       <img
         src={pokebola}
         className="card-img-top neon-img"
@@ -27,7 +26,6 @@ const CustomCard: React.FC<CustomCardProps> = ({ number, name }) => {
         }}
       />
       <div className="card-body" style={{ paddingTop: '80px' }}>
-        {/* Pasar ambos parámetros `number` y `name` en la URL */}
         <Link to={`/details/${name}/${number}`} style={{ textDecoration: 'none' }}>
           <button type="button" className="btn btn-success">
             <strong>#{number.toString().padStart(3, '0')}</strong> {name}

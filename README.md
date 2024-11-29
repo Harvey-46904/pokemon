@@ -1,37 +1,46 @@
 # Proyecto Pokémon
 
-Este proyecto es una aplicación en React que muestra información sobre Pokémon usando la API de PokéAPI. Permite ver una lista de Pokémon y ver detalles más específicos sobre cada uno, incluyendo su tipo, estadísticas y una imagen representativa.
+Este proyecto es una aplicación desarrollada en **React** que consume la **PokéAPI** para mostrar información detallada sobre diferentes Pokémon. Los usuarios pueden explorar una lista de Pokémon y consultar detalles específicos, como su tipo, estadísticas y una imagen representativa.
 
-## Descripción
+---
 
-La aplicación se ajusta a las necesidades del proyecto, permitiendo visualizar la información básica de cada Pokémon de forma rápida y sencilla. Además, ofrece una interfaz visual atractiva, con bordes redondeados, fondos personalizados y una buena disposición en dispositivos móviles.
+## 🌟 Características
 
 ### Funcionalidades Implementadas
 
-- **Lista de Pokémon**: Visualiza una lista de Pokémon con su número y nombre.
-- **Detalles del Pokémon**: Accede a detalles completos de un Pokémon, como su imagen, tipo y estadísticas.
-- **Responsive Design**: La aplicación está optimizada para funcionar tanto en dispositivos de escritorio como móviles.
+1. **Lista de Pokémon**: 
+   - Visualiza una lista con el número y el nombre de cada Pokémon.
+   - Diseño interactivo con botones que permiten navegar hacia los detalles.
 
-## Mejoras y Futuro
+2. **Detalles de Pokémon**: 
+   - Presenta información completa, incluyendo:
+     - **Imagen**: Representación visual del Pokémon.
+     - **Estadísticas**: Datos clave como HP, ataque, defensa, entre otros.
+     - **Tipos**: Clasificación del Pokémon por su tipo (ej. fuego, agua, eléctrico).
 
-1. **Pruebas de Automatización**:
-   - Si tuviera más tiempo, implementaría pruebas automatizadas, especialmente para el consumo de APIs. Las pruebas serían útiles para asegurar que las respuestas de la API sean correctas, que la interfaz de usuario responda adecuadamente a las interacciones y que no haya errores en el flujo de datos.
+3. **Skeleton Loader**: 
+   - Mientras se cargan los datos de la API, se muestra un **cargador visual** (skeleton loader) para mejorar la experiencia del usuario.
 
-2. **Integración de Animaciones y Más Información**:
-   - Si tuviera más tiempo, integraría más animaciones para mejorar la experiencia del usuario. Animaciones suaves al pasar el ratón sobre los Pokémon o al hacer clic en los botones proporcionarían una sensación más interactiva.
-   - También se podrían agregar más detalles estandarizados de cada Pokémon, como su habilidad, evolución y características especiales.
+4. **Diseño Responsivo**:
+   - La aplicación está optimizada para dispositivos móviles, tabletas y pantallas de escritorio.
 
-## Tecnologías Usadas
+---
 
-- **React**: Framework principal para la creación de la interfaz de usuario.
-- **React Router**: Para gestionar la navegación entre páginas.
-- **Bootstrap 4**: Para el diseño responsivo y los componentes predefinidos como botones y tarjetas.
-- **PokéAPI**: API utilizada para obtener la información de los Pokémon.
+## 🛠️ Tecnologías Usadas
 
-## Instalación
+- **React**: Framework para construir la interfaz de usuario.
+- **TypeScript**: Superset de JavaScript utilizado para mejorar el manejo de tipos en el código.
+- **React Router**: Navegación entre páginas de manera fluida.
+- **Bootstrap 4**: Biblioteca de diseño para estilos responsivos y componentes predefinidos.
+- **PokéAPI**: API utilizada para obtener información de los Pokémon.
+- **Jest y Testing Library** (en progreso): Herramientas de pruebas unitarias y de integración.
 
-1. Clona este repositorio en tu máquina local:
-2.npm run dev
-3.se inicia desde localhost:puerto/home
+---
 
+## ⚙️ Instalación y Ejecución
 
+Sigue estos pasos para ejecutar el proyecto en tu máquina local:
+
+1. Clona el repositorio:
+   accede desde local:puerto/home
+   

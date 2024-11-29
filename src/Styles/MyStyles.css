@@ -1,7 +1,7 @@
 /* Logo centrado en móvil */
 
 body{
-  background-image: url('../assets/img/fondo.jpg');
+  background-image: url('../assets/img/fondo.png');
   background-size: cover; /* Esto hace que la imagen cubra todo el body */
   background-position: center; /* Centra la imagen */
  
@@ -109,9 +109,117 @@ body{
 }
 
 .transparent-div {
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad */
+  background-color: rgba(0, 0, 0, 0.342); /* Fondo negro con 50% de opacidad */
   border-radius: 15px; /* Bordes redondeados */
   padding: 20px; /* Espaciado interno */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
  
+}
+
+/* Colores personalizados para los tipos de Pokémon */
+
+.bg-fire {
+  background-color: #f44336; /* Rojo (Fire) */
+}
+
+.bg-water {
+  background-color: #2196f3; /* Azul (Water) */
+}
+
+.bg-grass {
+  background-color: #4caf50; /* Verde (Grass) */
+}
+
+.bg-electric {
+  background-color: #ffeb3b; /* Amarillo (Electric) */
+}
+
+.bg-bug {
+  background-color: #4caf50; /* Verde oscuro (Bug) */
+}
+
+.bg-poison {
+  background-color: #9c27b0; /* Púrpura (Poison) */
+}
+
+.bg-fairy {
+  background-color: #f48fb1; /* Rosa claro (Fairy) */
+}
+
+.bg-flying {
+  background-color: #00bcd4; /* Azul claro (Flying) */
+}
+
+.bg-normal {
+  background-color: #9e9e9e; /* Gris (Normal) */
+}
+
+.bg-steel {
+  background-color: #607d8b; /* Gris acero (Steel) */
+}
+
+.bg-ghost {
+  background-color: #673ab7; /* Púrpura oscuro (Ghost) */
+}
+.bg-purple {
+  background-color: #673ab7; /* Púrpura oscuro (Ghost) */
+}
+
+.bg-dragon {
+  background-color: #3f51b5; /* Azul oscuro (Dragon) */
+}
+
+.bg-ice {
+  background-color: #03a9f4; /* Azul hielo (Ice) */
+}
+
+.bg-fighting {
+  background-color: #ff5722; /* Naranja (Fighting) */
+}
+
+.bg-psychic {
+  background-color: #e91e63; /* Rosa fuerte (Psychic) */
+}
+
+.bg-rock {
+  background-color: #795548; /* Marrón (Rock) */
+}
+
+.bg-ground {
+  background-color: #795548; /* Marrón tierra (Ground) */
+}
+
+.bg-dark {
+  background-color: #212121; /* Negro (Dark) */
+}
+
+
+/* Estilos de Skeleton */
+.skeleton {
+  background-color: #ccc;
+  background-image: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+.skeleton-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.skeleton-text {
+  height: 20px;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
