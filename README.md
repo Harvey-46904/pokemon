@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# Proyecto Pokémon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación en React que muestra información sobre Pokémon usando la API de PokéAPI. Permite ver una lista de Pokémon y ver detalles más específicos sobre cada uno, incluyendo su tipo, estadísticas y una imagen representativa.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación se ajusta a las necesidades del proyecto, permitiendo visualizar la información básica de cada Pokémon de forma rápida y sencilla. Además, ofrece una interfaz visual atractiva, con bordes redondeados, fondos personalizados y una buena disposición en dispositivos móviles.
 
-## Expanding the ESLint configuration
+### Funcionalidades Implementadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Lista de Pokémon**: Visualiza una lista de Pokémon con su número y nombre.
+- **Detalles del Pokémon**: Accede a detalles completos de un Pokémon, como su imagen, tipo y estadísticas.
+- **Responsive Design**: La aplicación está optimizada para funcionar tanto en dispositivos de escritorio como móviles.
 
-- Configure the top-level `parserOptions` property like this:
+## Mejoras y Futuro
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Pruebas de Automatización**:
+   - Si tuviera más tiempo, implementaría pruebas automatizadas, especialmente para el consumo de APIs. Las pruebas serían útiles para asegurar que las respuestas de la API sean correctas, que la interfaz de usuario responda adecuadamente a las interacciones y que no haya errores en el flujo de datos.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. **Integración de Animaciones y Más Información**:
+   - Si tuviera más tiempo, integraría más animaciones para mejorar la experiencia del usuario. Animaciones suaves al pasar el ratón sobre los Pokémon o al hacer clic en los botones proporcionarían una sensación más interactiva.
+   - También se podrían agregar más detalles estandarizados de cada Pokémon, como su habilidad, evolución y características especiales.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Tecnologías Usadas
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **React**: Framework principal para la creación de la interfaz de usuario.
+- **React Router**: Para gestionar la navegación entre páginas.
+- **Bootstrap 4**: Para el diseño responsivo y los componentes predefinidos como botones y tarjetas.
+- **PokéAPI**: API utilizada para obtener la información de los Pokémon.
+
+## Instalación
+
+1. Clona este repositorio en tu máquina local:
+
+
